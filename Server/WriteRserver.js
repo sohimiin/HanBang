@@ -25,7 +25,6 @@ app.post('/review', function(req, res, next){
                 timeregister = inputData.TimeRegister;
                 //id = inputData.id;
                 rating = inputData.Rating;
-                //apictures = inputData.APictures;
 
                 //console.log(text + ", " + ownergb + ", " + heatcooling + ", " + optionsoperation + ", " + soundproof + ", " + waterpressure + ", " + cctv + ", " + timeregister + ", " + rating);
                 var mysql = require('mysql');
