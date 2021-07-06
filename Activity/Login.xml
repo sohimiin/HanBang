@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/tv_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="8dp"
+        android:text="로그인"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tv_Login"
+        app:layout_constraintStart_toStartOf="@+id/tv_Login"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Login" />
+
+    <EditText
+        android:id="@+id/et_PassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/et_Id"
+        app:layout_constraintStart_toStartOf="@+id/et_Id"
+        app:layout_constraintTop_toBottomOf="@+id/et_Id" />
+
+    <Button
+        android:id="@+id/bt_Login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="로그인"
+        android:textSize="30sp"
+        android:onClick="LoginButton"
+        app:layout_constraintEnd_toEndOf="@+id/et_PassWord"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_PassWord"
+        app:layout_constraintTop_toBottomOf="@+id/et_PassWord" />
+
+    <Button
+        android:id="@+id/bt_Join"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="회원가입"
+        android:textSize="30sp"
+        android:onClick="RegisterButton"
+        app:layout_constraintEnd_toEndOf="@+id/bt_Login"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_Login"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Login" />
+
+
+    <CheckBox
+        android:id="@+id/cb_IdSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="로그인 정보 기억"
+        app:layout_constraintEnd_toEndOf="@+id/et_PassWord"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/et_PassWord"
+        app:layout_constraintTop_toBottomOf="@+id/et_PassWord" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
