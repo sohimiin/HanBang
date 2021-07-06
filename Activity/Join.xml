@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Join">
+
+    <TextView
+        android:id="@+id/tv_Join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:text="회원가입"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="430dp"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_IdCheck1" />
+
+    <Button
+        android:id="@+id/bt_Join"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="JoinButton"
+        android:text="회원가입"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_Phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_Phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_Phone" />
+
+    <EditText
+        android:id="@+id/et_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Name" />
+
+    <EditText
+        android:id="@+id/et_PassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/et_Id"
+        app:layout_constraintStart_toStartOf="@+id/et_Id"
+        app:layout_constraintTop_toBottomOf="@+id/et_Id" />
+
+    <Button
+        android:id="@+id/bt_pwCheck"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onButtonPwCheckClicked"
+        android:text="확인"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_PassWordCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/et_Id"
+        app:layout_constraintTop_toTopOf="@+id/et_PassWordCheck" />
+
+    <Button
+        android:id="@+id/bt_IdCheck1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onButtonIdClicked"
+        android:text="중복확인"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_Id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/et_Id"
+        app:layout_constraintTop_toTopOf="@+id/et_Id" />
+
+    <EditText
+        android:id="@+id/et_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="전화번호"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_PassWordCheck"
+        app:layout_constraintStart_toStartOf="@+id/et_PassWordCheck"
+        app:layout_constraintTop_toBottomOf="@+id/et_PassWordCheck" />
+
+    <EditText
+        android:id="@+id/et_PassWordCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="비밀번호 재확인"
+        android:inputType="textPassword"
+
+        app:layout_constraintEnd_toEndOf="@+id/et_PassWord"
+        app:layout_constraintStart_toStartOf="@+id/et_PassWord"
+        app:layout_constraintTop_toBottomOf="@+id/et_PassWord" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
